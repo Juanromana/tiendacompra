@@ -11,7 +11,6 @@ import Vista.Principal;
 import Vista.Producto_Tabla;
 import Vista.Usuarios_Tabla;
 import Vista.Ver_venta;
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -249,6 +248,7 @@ public class ControladorVenta implements ActionListener, DocumentListener {
     public void insertUpdate(DocumentEvent e) {
         moduser.mostrarTablaUsuario(user_table.getJtUsuario(), user_table.getTxtbuscarusu().getText(), "");
         modcli.mostrarTablaCliente(cliente_table.getJtCliente(), cliente_table.getTxtbuscarcli().getText(), "");
+        modproduc.mostrarTablaProducto(tableproduc.getJtproducto(), tableproduc.getTxtbuscarpro().getText(), "");
 
     }
 
@@ -256,6 +256,7 @@ public class ControladorVenta implements ActionListener, DocumentListener {
     public void removeUpdate(DocumentEvent e) {
         moduser.mostrarTablaUsuario(user_table.getJtUsuario(), user_table.getTxtbuscarusu().getText(), "");
         modcli.mostrarTablaCliente(cliente_table.getJtCliente(), cliente_table.getTxtbuscarcli().getText(), "");
+        modproduc.mostrarTablaProducto(tableproduc.getJtproducto(), tableproduc.getTxtbuscarpro().getText(), "");
 
     }
 
@@ -263,6 +264,7 @@ public class ControladorVenta implements ActionListener, DocumentListener {
     public void changedUpdate(DocumentEvent e) {
         moduser.mostrarTablaUsuario(user_table.getJtUsuario(), user_table.getTxtbuscarusu().getText(), "");
         modcli.mostrarTablaCliente(cliente_table.getJtCliente(), cliente_table.getTxtbuscarcli().getText(), "");
+        modproduc.mostrarTablaProducto(tableproduc.getJtproducto(), tableproduc.getTxtbuscarpro().getText(), "");
 
     }
 }
